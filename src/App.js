@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Post from "./Post";
 import { db } from "./firebase";
-import { Modal } from "@mui/material";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
+
 
 function getModalStyle () {
   const top = 50;
@@ -53,6 +54,7 @@ function App() {
 
   return (
     <div className="app">
+      
       <Modal 
       open={open} 
       onClose= {() => setOpen(false)}
@@ -63,6 +65,7 @@ function App() {
       <h2>I am a modal</h2>
         </div>
       </Modal>
+      
 
       <div className="app__header">
         <img
