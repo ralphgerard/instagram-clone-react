@@ -17,3 +17,10 @@
 max-width: 100px;
    
 }
+
+form.app__signup {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
