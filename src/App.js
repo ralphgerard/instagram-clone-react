@@ -8,6 +8,8 @@ import { Button, Input } from "@material-ui/core";
 import { signOut } from "firebase/auth";
 import ImageUpload from './ImageUpload'
 
+
+
 function getModalStyle() {
   const top = 50;
   const left = 50;
@@ -41,6 +43,7 @@ function App() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [user, setUser] = useState(null);
+  
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
